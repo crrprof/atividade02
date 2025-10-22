@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Exemplo — Home</title>
+  <meta name="description" content="Página fictícia de uma ONG">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="layout">
+  <!-- Cabeçalho / Navegação -->
+  <header class="nav">
+    <div class="container bar">
+      <a class="brand" href="index.html">ONG Exemplo</a>
+
+      <!-- 1) Checkbox controlador (acessível, não usar .hidden) -->
+      <input type="checkbox" id="nav-toggle" class="sr-only">
+
+      <!-- 2) Botão hambúrguer (label) -->
+      <label for="nav-toggle" class="hamb-label hamb" aria-label="Abrir/fechar menu" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <!-- 3) Menu (precisa vir após o input e o label) -->
+      <nav class="menu" id="menu" role="navigation" aria-label="Menu principal">
+        <a href="index.html" class="is-active" aria-current="page">Home</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="cadastro.html">Cadastro</a>
+        <div class="dropdown">
+          <button class="dropdown__toggle" type="button" aria-haspopup="true" aria-expanded="false">Mais</button>
+          <div class="panel" role="menu">
+            <a class="item" href="#" role="menuitem">Transparência</a>
+            <a class="item" href="#" role="menuitem">Voluntariado</a>
+            <a class="item" href="#" role="menuitem">Doar</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="container main">
+    <section class="elev p-3">
+      <h1>ONG Exemplo</h1>
+      <p class="muted">Educação, Arte e Inclusão Social</p>
+    </section>
+
+    <section class="grid gap-3">
+      <article class="elev p-3">
+        <h2>Quem Somos</h2>
+        <p>Somos uma organização sem fins lucrativos (fictícia) dedicada a promover aprendizagem, criatividade e cidadania.</p>
+      </article>
+      <article class="elev p-3">
+        <h2>Projetos</h2>
+        <ul class="mt-2">
+          <li>Oficinas de Arte e Música</li>
+          <li>Hortas Comunitárias e Ações Solidárias</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container center-text small">
+      <p>2025 ONG Exemplo</p>
+    </div>
+  </footer>
+</body>
+</html>

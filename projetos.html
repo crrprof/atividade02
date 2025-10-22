@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Exemplo — Projetos Sociais</title>
+  <meta name="description" content="Projetos sociais da ONG Exemplo, voluntariado e como doar.">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="layout">
+  <a href="#conteudo" class="sr-only">Pular para o conteúdo</a>
+
+  <header class="nav">
+    <div class="container bar">
+      <a class="brand" href="index.html">ONG Exemplo</a>
+
+      <input type="checkbox" id="nav-toggle" class="sr-only">
+
+      <label for="nav-toggle" class="hamb-label hamb" aria-label="Abrir/fechar menu" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <a href="index.html">Home</a>
+        <a href="projetos.html" class="is-active" aria-current="page">Projetos</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <div class="dropdown">
+          <button class="dropdown__toggle" type="button">Mais</button>
+          <div class="panel" id="submenu-mais">
+            <a class="item" href="#">Transparência</a>
+            <a class="item" href="#">Voluntariado</a>
+            <a class="item" href="#">Doar</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main" id="conteudo">
+    <section class="elev p-3">
+      <h2>Projetos Sociais</h2>
+      <p>Conheça nossas iniciativas e veja como você pode participar.</p>
+      <figure class="grid mt-2">
+        <img src="img/projetos.jpg" alt="Imagem ilustrativa de voluntariado" class="col-lg-12">
+        <figcaption class="small muted mt-2">Voluntariado em ação nos projetos da ONG.</figcaption>
+      </figure>
+    </section>
+
+    <section class="grid grid-12 gap-3">
+      <article class="col-lg-6 col-md-12 elev p-3">
+        <h2>Voluntariado</h2>
+        <p>O voluntariado é a base dos nossos projetos. Você pode ajudar de diversas formas:</p>
+        <ul class="mt-2">
+          <li>Auxílio em oficinas (arte, leitura, reforço escolar).</li>
+          <li>Organização de doações e logística de eventos.</li>
+        </ul>
+      </article>
+
+      <article class="col-lg-6 col-md-12 elev p-3">
+        <h2>Como Doar</h2>
+        <p>Suas doações mantêm nossos projetos ativos. Você pode contribuir de três maneiras:</p>
+        <ol class="mt-2">
+          <li><strong>Materiais:</strong> livros, cadernos, lápis, tintas, pincéis, instrumentos simples.</li>
+          <li><strong>Alimentos:</strong> itens não perecíveis para lanches das oficinas.</li>
+        </ol>
+        <p class="mt-2">
+          Para combinar a entrega ou solicitar dados para doação financeira, escreva para
+          <strong>contato@ongexemplo.org</strong> ou ligue <strong>(11) 90000-0000</strong>.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container center-text small">
+      <p>2025 ONG Exemplo</p>
+    </div>
+  </footer>
+</body>
+</html>
